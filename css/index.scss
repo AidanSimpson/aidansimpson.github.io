@@ -1,0 +1,347 @@
+/* file import */
+@import 'variables';
+@import 'mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.m-hidden {
+  display: none;
+
+  @media (width >= 25em) {
+    display: inline-block;
+  }
+}
+
+img {
+  max-width: 300px;
+}
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }	
+// }
+
+// @-webkit-keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }		
+// }
+
+// .fadeIn
+// {
+// 	animation-name: fadeIn;
+// 	-webkit-animation-name: fadeIn;	
+
+// 	animation-duration: 0.6s;	
+// 	-webkit-animation-duration: 0.6s;
+
+// 	animation-timing-function: ease-in-out;	
+// 	-webkit-animation-timing-function: ease-in-out;		
+
+// 	visibility: visible !important;	
+// }
+
+// .card {
+//   background-color: white;
+//   width: 20rem;
+//   overflow: hidden;
+//   margin: 2rem;
+//   box-shadow: 5px 5px 5px 5px #000;
+//   @include border-radius(0.5rem);
+// }
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  color: $white;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    height: 100%;
+    background-image: url(../img/cross.svg);
+    background-color: $primary-color;
+    background-blend-mode: multiply;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: $primary-font-family;
+  margin-block: 0;
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-size: unset;
+}
+
+h2 {
+  @media (width >= 40em) {
+    font-size: 4rem;
+  }
+
+  @media (width >= 50em) {
+    font-size: 6rem;
+  }
+}
+
+p {
+  font-family: $primary-font-family;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+a,
+a:visited,
+a:active {
+  font-family: $primary-font-family;
+  text-decoration: none;
+  color: inherit;
+  transition: .2s ease-out;
+
+  &:hover {
+    text-decoration: underline 1px;
+    transition: .2s ease-out;
+  }
+}
+
+a.special {
+  background-color: $white;
+  color: $black;
+  padding: 5px 10px 5px 10px;
+  border-radius: $radius-small;
+
+  &:hover {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    transition: .2s ease-out;
+  }
+}
+
+section {
+  padding: $spacing-small 0 $spacing-small 0;
+
+  @media (width >= 40em) {
+    padding: $spacing-medium 0 $spacing-medium 0;
+  }
+}
+
+// div {
+//   p:last-of-type {
+//     margin-bottom: 0;
+//   }
+// }
+
+// Top Navigation
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+  width: $max-width;
+  margin: 0 auto;
+
+  // &__title {
+  //   margin: 0;
+  // }
+
+  button {
+    background: none;
+    border: none;
+    padding: 5px 0 0 0;
+
+    @media (width >= 40em) {
+      display: none;
+    }
+  }
+
+  &__open[aria-expanded='true'] {
+    + .topnav__menu {
+      translate: 0;
+    }
+  
+    @media (prefers-reduced-motion) {
+      opacity: 1;
+    }
+  }
+
+  &__close {
+    display: block;
+    margin-inline-start: auto;
+    margin-block-end: 8rem;
+
+    img {
+      width: 2.5rem;
+    }
+  }
+
+  &__menu {
+    @media (width < 40em) {
+      position: fixed;
+      inset: 0;
+      padding: 1.5rem;
+      background-image: url(../img/cross.svg);
+      background-color: $secondary-color;
+      background-blend-mode: multiply;
+      translate: 100vw 0;
+      transition: translate 0.5s ease-in-out;
+    }
+
+    @media (width < 40em) and (prefers-reduced-motion) {
+      translate: 0;
+      opacity: 0;
+      transition: opacity 500ms ease-in-out;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    @media (width < 40em) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+}
+
+// General Content
+.wrapper-header {
+  width: min(100% - 3rem, 56.25rem);
+  margin-inline: auto;
+  padding: $spacing-medium 0 $spacing-medium 0;
+  text-align: left;
+
+  @media (width >= 40em) {
+    text-align: center;
+    padding: $spacing-large 0 $spacing-medium 0;
+  }
+}
+
+.wrapper-container {
+  background-color: $white;
+  color: $black;
+}
+
+.wrapper-content {
+  width: $max-width;
+  margin-inline: auto;
+}
+
+.grid-4-col {
+  display: grid;
+  justify-content: center;
+  gap: $spacing-small;
+
+  @media (width >= 25em) {
+    grid-template-columns: repeat(auto-fit, max(300px));
+    max-width: 400px;
+  }
+
+  @media (width >= 40em) {
+    // grid-template-columns: clamp(150px, 40%, 375px) auto;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    max-width: 800px;
+  }
+
+  @media (width >= 77.75em) {
+    max-width: unset;
+  }
+}
+
+.wrapper-footer {
+  width: min(100% - 3rem, 56.25rem);
+  margin-inline: auto;
+  padding: $spacing-large 0 $spacing-xlarge 0;
+}
+
+.title-section {
+  flex: 1 100%;
+  margin-bottom: $spacing-small;
+}
+
+.card-project {
+  border: 2px solid $secondary-color;
+  // border-radius: $radius-small;
+  background-color: $white;
+  text-align: center;
+  transition: .2s ease-out;
+  overflow: hidden;
+  border-radius: $radius-small;
+  // box-shadow: 0px 8px 15px 0px rgba(49,49,49,.2);
+
+  &:hover {
+    // box-shadow: 0px 8px 15px 0px rgba(6,71,113,.6);
+    box-shadow: 0px 8px 15px 0px rgba(49,49,49,.3);
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s ease-out;
+  }
+
+  a:hover {
+    text-decoration: none;
+    transition: .2s ease-out;
+  }
+
+  img {
+    max-width: 150px;
+  }
+
+  p.title-project {
+    color: $white;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95px;
+    background-image: url(../img/cross.svg);
+    background-color: $primary-color;
+    background-blend-mode: multiply;
+  }
+
+  p.title-small {
+    background-color: #efefef;
+    padding: 0 12px 0 12px;
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+}
+
+// .card-project {
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: $spacing-small;
+//   flex: 1 1 auto;
+//   flex-basis: auto;
+//   flex-basis: 100%;
+
+//   @media (width > 40em) {
+//     flex-basis: 33%;
+//   }
+// }

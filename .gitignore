@@ -1,0 +1,19 @@
+# Ignore .env files as they are personal
+/.env
+/.editorconfig
+/.gitattributes
+/.ddev
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+#Sass
+.sass-cache
+*.css.map
+
+#Exports
+*.gz
+*.sql
+*.zip

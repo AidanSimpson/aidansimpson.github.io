@@ -1,0 +1,479 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* $mainBlue: #00aeef;
+$mainBlue: #00A9E8; */
+
+.row
+{
+	min-width: 100% !important;
+}
+
+body
+{
+	font-family: sans-serif;
+	cursor: default;
+	overflow-x: hidden;
+	
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 0.7s;	
+	-webkit-animation-duration: 0.7s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }	
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }		
+}
+
+.fadeIn
+{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 0.6s;	
+	-webkit-animation-duration: 0.6s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+#mainPageContent
+{
+	float: right;
+}
+
+p
+{
+	line-height: 35px;
+	letter-spacing: 0.5px;
+	color: #000000;
+	font-family: sans-serif;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.simpsonLogoSVG
+{
+	width: 100%;
+	margin-top: 20px;
+}
+
+#mobileLogo
+{
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0 auto;
+}
+
+.noPadding
+{
+	padding: 0;
+}
+
+/*________________________________START MOBILE NAV*/
+.top-bar
+{
+	border-radius: 10px;
+	width: 94%;
+	margin: auto;
+	margin-top: 10px;
+	background-color: #FFFFFF;
+}
+
+.top-bar.expanded .title-area
+{
+	cursor: pointer;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+}
+
+.top-bar .toggle-topbar.menu-icon a span::after {
+	box-shadow: -10px 0 0 2px $mainBlue, -10px 8px 0 2px $mainBlue, -10px 16px 0 2px $mainBlue;
+	width: 20px;
+}
+
+#mobileNav li a
+{
+	display: block;
+	padding: 8px 0 5px 0;
+	color: #000000;
+	border-bottom: 1px solid #efefef;
+}
+
+#mobileNav li a:hover
+{
+	background-color: #EFEFEF;
+}
+
+#mobileNav
+{
+	margin: 0;
+}
+
+#mobileNav li
+{
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#mobileNav li:last-child
+{
+	margin-bottom: 15px;
+	border-bottom: 2px solid #efefef;
+}
+
+/*_______________________________END MOBILE NAV*/
+
+
+
+/*_________________________________DESKTOP NAV*/
+#mainNav ul
+{
+	list-style-type: none;
+	margin-top: 80px;
+	margin-bottom: 10px;
+	padding: 0;
+	font-size: 1em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: sans-serif;
+}
+	
+#mainNav ul li
+{
+	margin-top: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+	
+#mainNav ul li a
+{
+	color: #3D3D3D;
+	transition: all 0.3s ease;
+	font-weight: bold;
+	border-right: 0px solid #ffffff;
+	border-left: 0px solid #ffffff;
+	padding-right: 0;
+	padding-left: 0;
+}
+		
+#mainNav ul li a:hover
+{
+	border-radius: 10px;
+	transition: all 0.2s ease;
+	border-right: 8px solid $mainBlue;
+	border-left: 8px solid $mainBlue;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#sideNav
+{
+	border-right: 2px solid #efefef;
+	position: fixed;
+	height: 10000px;
+	text-align: center;
+	background-image: url(../images/crossword.png);
+}
+
+#mainNav li:last-child
+{
+	margin-top: 65px;
+}
+/*___________________________END DESKTOP NAV*/
+
+
+.sectionTitle h3
+{
+	font-size:35px;
+	font-weight: bold;
+	margin-bottom: 45px;
+	border-bottom: 10px solid $mainBlue;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	color: #313131;
+}
+
+#Copyright
+{
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+	opacity: 0.6;
+	font-size: 12px;
+}
+
+#Copyright p
+{
+	font-size: 16px;
+}
+
+.copyrightA
+{
+	font-size: 20px;
+}
+
+
+/*________________Start Index Page*/
+
+#indexWelcomeMobile
+{
+	margin-bottom: 35px;
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#indexWelcomeMobile p
+{
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+.indexMobileNav
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	border: 2px solid $mainBlue;
+	padding: 10px 20px 10px 20px;
+	border-radius: 10px;
+	max-width: 450px;
+}
+
+.indexMobileNav a
+{
+	font-size: 20px;
+	color: $mainBlue;
+}
+
+.indexDesktopWelcome
+{
+	text-align: center;
+	margin-top: 10px;
+}
+
+.indexDesktopWelcome h3
+{
+	font-size: 60px;
+	font-weight: bold;
+	color: #313131;
+}
+
+.indexDesktopWelcome h4
+{
+	font-size: 25px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	color: $mainBlue;
+	line-height: 36px
+}
+
+.indexDesktopSection
+{
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 20px;
+}
+
+.indexDesktopSection p
+{
+	text-align: left;
+}
+/*________________End Index Page*/
+
+
+
+
+/*________________Start About Page*/
+
+#aboutImageCon img
+{
+	border-radius: 300px;
+	cursor: default;
+	border: 4px solid $mainBlue;
+	padding: 5px;
+}
+
+#aboutImageCon p
+{
+	margin-top: 30px;
+}
+
+/*________________End About Page*/
+
+
+
+
+/*________________Start Portfolio Page*/
+
+.portfolioImg
+{
+	margin-bottom: 10px;
+}
+
+.portfolioImg img
+{
+	border: 4px solid $mainBlue;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#lightbox
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #949191;
+	background: rgba(0,0,0,0.7);
+	text-align: center;
+	z-index: 200;
+}
+
+#lightbox img
+{
+	-webkit-box-shadow: 0 0 25px #111;
+	-moz-box-shadow: 0 0 25px #111;
+	box-shadow: 0 0 25px #111;
+	max-width: 95%;
+	border-radius: 20px;
+}
+
+#lightbox p
+{
+	text-align: center;
+	color: #FFFFFF;
+	margin-right: 40px;
+	margin-top: 80px;
+	font-size: 22px;
+	width: 100%;
+}
+
+.hide
+{
+	display: none;
+}
+
+.show
+{
+	display: block;
+}
+
+
+/*________________End Portfolio Page*/
+
+
+@media screen and (min-width: 642px) 
+{
+	.indexDesktopWelcome
+	{
+		margin-top: 70px;
+	}
+
+	.indexDesktopWelcome h3
+	{
+		font-size: 70px;
+	}
+	
+	.indexDesktopWelcome h4
+	{
+		font-size: 25px;
+	}
+
+	.sectionTitle h3
+	{
+		font-size:45px;
+	}
+	
+	.simpsonLogoSVG
+	{
+		max-width: 90%;
+		margin-top: 60px;
+	}
+	
+	#indexWelcomeMobile
+	{
+		margin-top: 25px;
+	}
+}
+
+@media screen and (min-width: 1026px) 
+{
+	.indexDesktopSection
+	{
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.simpsonLogoSVG
+	{
+		width: 170px;
+		margin-top: 50%;
+	}
+	
+	#mainPageContent
+	{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	
+	.indexDesktopWelcome h3
+	{
+		font-size: 130px;	
+	}
+	
+	.indexDesktopWelcome h4
+	{
+		font-size: 40px;
+	}
+	
+	.aboutDeskCon
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	.aboutDeskCon p
+	{
+		padding-right: 100px;
+	}
+	
+	#aboutImageCon img
+	{
+		margin-top: 8px;
+		max-width: 98%;
+	}
+	
+	.portfolioDeskCons
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
