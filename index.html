@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GBCP6Q3DW0"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Aidan Simpson,Fanshawe,LinkedIn,GitHub,Developer,Drupal,Front-end Developer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="ALcutG5x_uynRIjsCtcNu23h555bs7joDqDzDzhMyMU"
+    />
+    <link href="https://www.aidansimpson.com" rel="canonical" />
+    <link rel="shortcut icon" href="favicon.ico" />
     <title>Aidan Simpson | Web Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/index.css"
+      type="text/css"
+      media="screen"
+    />
     <script src="js/index.js" async></script>
   </head>
-
   <body>
     <header class="topnav">
-      <h1 class="topnav__title">Aidan Simpson <span class="m-hidden">| Web Developer</span></h1>
+      <a href="/" class="link-underline"
+        ><h1 class="topnav__title">
+          Aidan Simpson <span class="m-hidden">| Web Developer</span>
+        </h1></a
+      >
       <nav>
         <span id="nav-label" hidden>Navigation</span>
-        <button id="btnOpen" class="topnav__open" aria-expanded="false" aria-labelledby="nav-label">
-          <img src="img/hamburger.svg" alt="" width="40" height="24" />
+        <button
+          id="btnOpen"
+          class="topnav__open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
+        >
+          <img
+            src="img/hamburger.svg"
+            alt="Open mobile menu for navigation links"
+            width="40"
+            height="24"
+          />
         </button>
         <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
           <button id="btnClose" class="topnav__close" aria-label="Close">
@@ -26,10 +61,14 @@
           </button>
           <ul class="topnav__links">
             <li class="topnav__item">
-              <a href="/about.html" class="topnav__link">Portfolio</a>
+              <a href="/history.html" class="topnav__link link-underline"
+                >History</a
+              >
             </li>
             <li class="topnav__item">
-              <a href="https://www.linkedin.com/in/aidansimpson1/" target="_blank" class="topnav__link special">Hire Me</a>
+              <a href="/connect.php" class="topnav__link special"
+                >Get Started</a
+              >
             </li>
           </ul>
         </div>
@@ -37,95 +76,176 @@
     </header>
 
     <main>
-    <section>
+      <section>
         <div class="wrapper-header">
           <h2>Hello Traveler</h2>
-          <p>I am a developer who enjoys turning ideas into scalable websites. Take a look at some of my work!</p>
-          <p>While I found myself primarily working with Drupal (an open-source CMS) in various front-end / back-end roles, each brought unique challenges, lessons, and new skills. In parallel to these roles, I also dedicated time in completing various Certificates focused on communication so I may face any situation with confidence.</p>
-          <a href="https://www.linkedin.com/in/aidansimpson1/" target="_blank">LinkedIn</a>
-          <a href="https://www.drupal.org/u/aidansimpson" target="_blank">Drupal</a>
-          <a href="https://github.com/AidanSimpson" target="_blank">GitHub</a>
-          <a href="mailto:aidansimpson0@gmail.com" target="_blank">Email</a>
+          <!-- <p>
+            Welcome! I am currently in the process of changing the design and
+            rebuilding. Please excuse me!<br />
+            I am expected to complete prior to March 2024.
+          </p> -->
+          <p class="text-large">
+            Digital presence is an essential component of leading organizations.
+            I provide essential services in today's marketplace to turn your
+            ideas into scalable websites.
+          </p>
         </div>
       </section>
 
       <section class="wrapper-container">
-        <h3 class="wrapper-content title-section">Recent Projects</h3>
+        <h3 class="wrapper-title">Recent Projects</h3>
         <div class="wrapper-content grid-4-col">
-          <div class="card-project">
-            <a href="https://fi.edu/en" target="_blank">
-              <img src="img/tfi-logo.svg" alt="The Franklin Institute">
-              <p class="title-project">The Franklin Institute</p>
-              <p>Front-end Developer</p>
-              <p>Theming/Site-build</p>
-              <p class="title-small">Kalamuna</p>
-            </a>
-          </div>
+          <a href="https://fi.edu/en" class="card-project" target="_blank">
+            <img
+              src="img/tfi-logo.svg"
+              alt="Open in new tab The Franklin Institute website homepage"
+            />
+            <p class="title-project">The Franklin Institute</p>
+            <p>Front-end Developer</p>
+            <p>Drupal</p>
+            <p class="text-small">Kalamuna</p>
+          </a>
 
-          <div class="card-project">
-            <a href="https://ssfhub.org/" target="_blank">
-              <img src="img/ssf-logo.svg" alt="Small-Scale Fisheries Resource and Collaboration Hub">
-              <p class="title-project">Small-Scale Fisheries Resource and Collaboration Hub</p>
-              <p>Front-end Developer</p>
-              <p>Theming/Site-build</p>
-              <p class="title-small">Kalamuna</p>
-            </a>
-          </div>
+          <a href="https://ssfhub.org/" class="card-project" target="_blank">
+            <img
+              src="img/ssf-logo.svg"
+              alt="Open in new tab Small-Scale Fisheries Resource and Collaboration Hub website homepage"
+            />
+            <p class="title-project">
+              Small-Scale Fisheries Resource and Collaboration Hub
+            </p>
+            <p>Front-end Developer</p>
+            <p>Drupal</p>
+            <p class="text-small">Kalamuna</p>
+          </a>
 
-          <div class="card-project">
-            <a href="https://shc.stanford.edu" target="_blank">
-              <img src="img/shc-logo.svg" alt="Stanford Humanities Center">
-              <p class="title-project">Stanford Humanities Center</p>
-              <p>Front-end Developer</p>
-              <p>Theming/Site-build</p>
-              <p class="title-small">Kalamuna</p>
-            </a>
-          </div>
+          <a
+            href="https://shc.stanford.edu"
+            class="card-project"
+            target="_blank"
+          >
+            <img
+              src="img/shc-logo.svg"
+              alt="Open in new tab Stanford Humanities Center website homepage"
+            />
+            <p class="title-project">Stanford Humanities Center</p>
+            <p>Front-end Developer</p>
+            <p>Drupal</p>
+            <p class="text-small">Kalamuna</p>
+          </a>
 
-          <div class="card-project">
-            <a href="https://www.cfpna.ca/" target="_blank">
-              <img src="img/cfpna-logo.svg" alt="Stanford Humanities Center">
-              <p class="title-project">Canadian Family Practice Nurses Association</p>
-              <p>Support Developer</p>
-              <p class="title-small">Volunteer</p>
-            </a>
+          <a
+            href="https://americanindian.si.edu/ancestors-know/"
+            class="card-project"
+            target="_blank"
+          >
+            <img
+              src="img/nmaia-logo.svg"
+              alt="Open in new tab Ancestors Know Who We Are website homepage"
+            />
+            <p class="title-project">Ancestors Know Who We Are</p>
+            <p>Front-end Developer</p>
+            <p>Svelte</p>
+            <p class="text-small">Kalamuna</p>
+          </a>
+        </div>
+
+        <div class="btn-wrapper">
+          <a href="/history.html" class="btn-view-more">View Project Archive</a>
+        </div>
+      </section>
+
+      <section class="wrapper-container bg-light featured-content">
+        <h3 class="wrapper-title">About Aidan Simpson</h3>
+        <div class="wrapper-content grid-2-col">
+          <div class="wrapper-text">
+            <p>
+              With a proven track record of responsibility and reliability, I
+              have played a crucial for over seven years within fast-paced
+              agency environments in crafting responsive and accessible websites
+              across browsers and devices, while specializing in Drupal
+              development and strategy.
+            </p>
+            <p>
+              During recent years I have focused on honing skills, and gaining
+              expertise in building pixel-perfect themes that follow
+              user-centered design and principles, followed by thorough quality
+              assurance testing.
+            </p>
+            <a href="/history.html" class="btn-view-more"
+              >Read Detailed History</a
+            >
+          </div>
+          <div class="wrapper-image">
+            <img src="img/aidan.jpg" alt="Aidan Simpson Portrait" />
           </div>
         </div>
       </section>
 
       <section class="wrapper-container">
-        <h3 class="wrapper-content title-section">Personal Projects</h3>
+        <h3 class="wrapper-title">Personal Projects</h3>
         <div class="wrapper-content grid-4-col">
-          <div class="card-project">
-            <a href="/EDFC_FinalFinal/">
-              <img src="img/edfc-logo.svg" alt="Eating Disorders Foundation of Canadar">
-              <p class="title-project">Eating Disorders Foundation of Canada</p>
-              <p>Front-end Developer</p>
-              <p>Project Manager | Video Creator</p>
-            </a>
-          </div>
+          <a href="https://www.cfpna.ca/" class="card-project" target="_blank">
+            <img
+              src="img/cfpna-logo.svg"
+              alt="Open in new tab Stanford Humanities Center website homepage"
+            />
+            <p class="title-project">
+              Canadian Family Practice Nurses Association
+            </p>
+            <p>Support Developer</p>
+            <p>Wix</p>
+            <p class="text-small">Volunteer</p>
+          </a>
 
-          <div class="card-project">
-            <a href="thesis_minisite">
-              <img src="img/ao-logo.svg" alt="Arenas Ontario">
-              <p class="title-project">Arenas Ontario</p>
-              <p>Web Developer and Designer</p>
-              <p>Laravel and Angular</p>
-            </a>
-          </div>
+          <a href="arenas-ontario" class="card-project" target="_blank">
+            <img
+              src="img/ao-logo.svg"
+              alt="Open in new tab Arenas Ontario sub site homepage"
+            />
+            <p class="title-project">Arenas Ontario</p>
+            <p>Developer / Designer</p>
+            <p>Laravel - Angular - Ionic</p>
+          </a>
+
+          <a href="/edfc" class="card-project" target="_blank">
+            <img
+              src="img/edfc-logo-v2.svg"
+              alt="Open in new tab Eating Disorders Foundation of Canadar sub site homepage"
+            />
+            <p class="title-project">Eating Disorders Foundation of Canada</p>
+            <p>Developer / Project Manager</p>
+            <p>CRUD - PHP</p>
+          </a>
+
+          <a href="/" class="card-project">
+            <img
+              src="img/as-logo.svg"
+              alt="Open in same tab Aidan Branding History page"
+            />
+            <p class="title-project">Aidan Simpson Branding</p>
+            <p>Designer</p>
+          </a>
         </div>
       </section>
-  
-      <section>
+
+      <section class="wrapper-container bg-dark">
+        <h3 class="wrapper-title">New Build? Rebuilding or Rebranding?</h3>
         <div class="wrapper-content">
-          <h3>History</h3>
-          <!-- <a id="history"></a> -->
-          <p>For over seven years I have been playing a crucial role in crafting websites or apps that are functional, beautiful, and accessible. Utilizing agile and scrum principles, I have been working collaboratively with teams across all levels of projects, including but not limited to internal teams (Designers, Developers), client teams (Stakeholders, Editors), and various other agencies (Staff Augmentations). This has allowed me to become an experienced developer within the industry and gain almost too much attention for detail - thus allowing high-quality results to be easy to find.</p>
-          <p>For over a decade I have worked with a variety of people both in social settings and outside of work, whether virtually or in-person. This has allowed my oral and written communication skills have continued to grow not only naturally, but professionally. Along with my organizational and collaborative skills, high-quality results are easy to find.</p>
+          <p>
+            I am available for hire! I would be excited to learn about your
+            project and discuss what we can do to show its full potential to the
+            world. Whether it invloves content architecture, designing to
+            support various devices and browsers, or simply ongoing support and
+            maintenance - I have done it all.
+          </p>
+          <a href="/history.html" class="btn-view-more"
+            >Get started by connecting</a
+          >
         </div>
       </section>
     </main>
 
-    <footer class="wrapper-footer"></footer>
+    <!-- <footer class="wrapper-footer"></footer> -->
   </body>
 </html>
