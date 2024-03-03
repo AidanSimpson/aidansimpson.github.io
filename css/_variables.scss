@@ -1,18 +1,31 @@
 // Colours
 $primary-color: #064771;
 $secondary-color: #181818;
+$accent-color-blue: #02529B;
+$accent-color-green: #B1BB1C;
+
 $white: #ffffff;
-$grey: #efefef;
-$black: #000000;
+$grey: #fafafa;
+$black: #222222;
+
+$notice: #d4efcc;
+$warning: #ffe69f;
+$error: #ebcccc;
+
+// Weight
+$weight-bold: 500;
+$weight-light: 300;
 
 // Spacing
 $spacing-xlarge: 8rem;
 $spacing-large: 5rem;
 $spacing-medium: 3rem;
 $spacing-small: 2rem;
+$spacing-xsmall: 1rem;
 
 // Radius
 $radius-small: 6px;
+$radius-large: 50%;
 
 // Width
 $max-width: min(100% - 3rem, 75rem);
